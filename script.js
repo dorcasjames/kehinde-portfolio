@@ -65,7 +65,7 @@ CHRONICLE.forEach((c, i) => {
   const el = document.createElement("div");
   el.className = "chap reveal";
   el.innerHTML = `<div class="chap-img" data-index="${i}" tabindex="0" role="button" aria-label="View ${esc(c.title)}">
-      <img src="images/${c.id}.jpg" alt="${esc(c.title)}, ${esc(c.role)}" loading="lazy"></div>
+      <img src="images/thumbs/${c.id}.jpg" alt="${esc(c.title)}, ${esc(c.role)}" loading="lazy"></div>
     <div class="chap-text"><div class="chap-no">${pad(i + 1)}</div>
       <h3>${esc(c.title)}</h3><p class="tag">${esc(c.role)}</p>
       ${c.desc.map(p => `<p>${esc(p)}</p>`).join("")}</div>`;
